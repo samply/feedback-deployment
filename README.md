@@ -97,3 +97,12 @@ IDs to run queries against Blaze. However, for these detailed queries, some kind
 of agreement between the researcher and the site would be necessary.
 
 ## TODOs
+There are many ways in which metadata feedback could be improved:
+
+- Integration into Negotiator, so that researchers and biobank site administrators do not need to use the BBMRI support email for every step. This would also mean that the researcher would no longer need to keep a separate list of searches, this functionality could be incorporated into the Negotiator.
+- Basic auth for the feedback agent as a stopgap.
+- Integration of the feedback agent into the Teiler.
+- Optional automated addition of metadata at sites, without site admin intervention.
+- Feedback agent: CORS currentls accepts all endpoints, this needs to be fixed.
+- Feedback agent: Getting reference token requires direct communication with feedback hub. It would be better to do this via Beam.
+- Feedbucj hub UI: VITE_BACKEND_URI is set in .env at build time. This needs to be settable at execution time, so that it can be passed as an environment variable to Docker.
